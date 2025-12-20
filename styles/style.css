@@ -41,9 +41,9 @@
   margin-block-end: 98px;
 }
 
-.header-title {
+.header-logo {
   font-family: var(--accent-font), fantasy;
-  font-size: var(--main-title-size);
+  font-size: var(--logo-size);
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -52,7 +52,7 @@
   text-align: center;
 }
 
-.header-subtitle {
+.header-title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
@@ -133,42 +133,42 @@
   object-fit: cover;
 }
 
-.image-begin {
+.image-brightness-contrast {
   filter: brightness(90%) contrast(120%);
   background-color: #fff;
 }
 
-.image-notebook {
+.image-brightness {
   background-color: gray;
   filter: brightness(90%);
 }
 
-.image-puzzles {
+.image-sepia-hue-rotate {
   background-color: #fff;
   filter: sepia(10%) hue-rotate(260deg);
 }
 
-.image-car {
+.image-hue-rotate-opacity {
   background-color: gray;
   filter: hue-rotate(90deg) opacity(0.8);
 }
 
-.image-conspect {
+.image-brightness-saturate-contrast {
   filter: brightness(110%) saturate(110%) contrast(180%);
   background-color: gray;
 }
 
-.image-snail {
+.image-brightness-contrast-light {
   background-color: burlywood;
   filter: brightness(80%) contrast(140%);
 }
 
-.image-textbook {
+.image-grayscale {
   background-color: lightgray;
   filter: grayscale(80%);
 }
 
-.image-stairway {
+.image-contrast-brightness-hard {
   background-color: peru;
   filter: contrast(150%) brightness(150%);
 }
@@ -184,12 +184,12 @@
   cursor: pointer;
   background-color: var(--bg-color);
   border: 2px solid var(--main-color);
-  grid-column: 1 / span 2;
   color: var(--bg-color);
   text-transform: inherit;
   transition: box-shadow 0.3s ease;
   position: relative;
   padding: 9px 0 7px;
+  flex-grow: 1;
 }
 
 .button:focus {
@@ -361,6 +361,11 @@
   font-weight: 400;
   font-size: 14px;
   color: var(--main-color);
+}
+
+.form-dialog-close {
+  grid-column: 1 / span 2;
+  display: flex;
 }
 
 @media (width <= 375px) {

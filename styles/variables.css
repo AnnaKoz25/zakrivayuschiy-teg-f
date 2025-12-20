@@ -4,7 +4,7 @@
   --accent-font: "Press Start 2P";
   --main-font-weight-heading: 715;
   --main-font-weight-text: 410;
-  --main-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --logo-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --section-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --text-shadow-color: #fff;
   --main-color: #000;
